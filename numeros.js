@@ -2,8 +2,9 @@ var numero;
 var resultado;
 
 numero = parseInt(prompt("Ingrese un número menor a 1000:"));
-
-if (numero < 1000) {
+if(numero <0 || numero >=1000 || numero ==0){
+    alert ("Numero no valido");
+} else if (numero < 1000) {
     if (numero < 10) {
          resultado = numero * numero;
         alert("El resultado es: " + resultado);
